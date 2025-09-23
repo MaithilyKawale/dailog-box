@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Dailog</title>
   <style>
-     body {
+    body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color:#84d8be;
+      background-color: #84d8be;
       color: white;
       display: flex;
       flex-direction: column;
@@ -65,6 +65,7 @@
       cursor: pointer;
       transition: transform 0.2s;
     }
+
     button:hover {
       transform: scale(1.05);
     }
@@ -84,8 +85,15 @@
     }
 
     @keyframes popup {
-      from { transform: scale(0.5); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
+      from {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
 
     h3 {
@@ -94,7 +102,7 @@
     }
 
     input {
-      width: 100%;
+      width: 93%;
       padding: 10px;
       margin: 10px 0;
       border: 1px solid #ccc;
@@ -108,8 +116,15 @@
       margin-top: 15px;
       width: 100%;
     }
+
     .login-btn:hover {
       background: #43cea2;
+    }
+
+    #closeBtn{
+      margin-top: 2px;
+      width: 100%;
+      align-items: center;
     }
 
     footer {
